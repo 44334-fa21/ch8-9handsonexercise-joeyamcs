@@ -1,13 +1,116 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
-		<meta charset="utf-8"> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Shearer Chapter8-9HandsOnExercise</title>
+		<meta charset="utf-8">
 		<style>
-		
-		</style>
-	</head> 
-<body> 
+		table {margin: auto;
+						border: 5px solid #000000;
+					border-spacing: 0;}
+					td, th {padding: 0.5em;
+					border: .5px solid #000000;}
+					caption {font-size: 1.2em;}
+					#wrapper {display: flex;
+										flex-direction: row;}
+										#stupers{flex: 2;}
+										#stuRating{flex: 3;}
+										#stuInfoCol1 {flex: 2;}
+										#stuInfoCol2{flex: 3;}
+										input[type="radio"] input [type="checkbox"] {display: inline;}
+					body {background-color: #d5e1f2;}
+@media only screen and (max-width: 768px){
+	flex
+}
 
-</body> 
-</html> 
+		</style>
+	</head>
+<body>
+	<table>
+		<caption> My Favorite Movie? </caption>
+		<tbody>
+			<tr>
+				<td> Title of Movie </td>
+				<td> Blade Runner 2049 </td>
+			</tr>
+			<tr>
+				<td> Director </td>
+				<td> Denis Villeneuve </td>
+			</tr>
+			<tr><td> Leading Actor</td>
+				<td> Ryan Gosling </td>
+			</tr>
+<tr>
+	<td> Leading Actress </td>
+	<td> Ana de Armas </td>
+</tr>
+<tr>
+	<td> Rating </td>
+	<td> R </td>
+</tr>
+	<tr>
+		<td> Description </td>
+		<td> "Officer K (Ryan Gosling), a new blade runner for the Los Angeles Police Department, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. His discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former blade runner who's been missing for 30 years" </td>
+</tr>
+<tr>
+	<td> Link </td>
+	<td> <a href="https://www.rottentomatoes.com/m/blade_runner_2049"> click here</a> </td>
+</tr>
+		</tbody>
+	</table>
+	<h1> Music Survey </h1>
+
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+		<div id="wrapper">
+			<fieldset id="stupers"> <legend> Information </legend>
+				<label for="myName"> *Name:</label>
+				<input type="text" name="myName" id="myName" required="required"
+				placeholder="Firstname Lastname"><br>
+				<label for="myAddress"> *Email: </label>
+				<input type="text" name="myEmail" id="myEmail" required="required"
+				placeholder="you@yourdomain.com"> <br>
+
+				<label for="myComments">
+					Text Box </label>
+				<textarea name="myComments" id="myComments" rows="3" cols="60"
+				required="required"> </textarea>
+			</fieldset>
+
+			<fieldset id="stuInfoCol1"> <legend> Boxes </legend>
+			 Radios: <br>
+	<input type="radio" name="Radio" id="one" value="one">
+	One <br>
+	<input type="radio" name="Radio" id="two" value="two">
+	Two <br>
+	<input type="radio" name="Radio" id="three" value="three">
+	Three <br>
+
+	Checkboxes:<br>
+	<input type="checkbox" name="Check" id="alpha" value="alpha">
+	alpha <br>
+	<input type="checkbox" name="Check" id="beta" value="beta">
+	beta <br>
+	<input type="checkbox" name="Check" id="gamma" value="gamma">
+	gamma <br>
+			</fieldset>
+
+			<fieldset id="stuInfoCol2"> <legend> Campus </legend>
+				Do you live on campus?: <br>
+				<select size="3" name="campus" id="campus">
+					<option value="Yes"> Yes </option>
+					<option value="No"> No </option>
+					<option value="No"> Maybe </option>
+					<option value="No"> Sometimes </option>
+				</select>
+					<input id="mySubmit" type="submit" value="submit"> <br>
+
+						<input id="myReset" type="reset" value="reset">
+			</fieldset>
+
+
+		</div>
+
+			</div>
+
+</body>
+<footer> Joey Shearer s533056@nwmissouri.edu </footer>
+</html>
